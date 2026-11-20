@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Still Water: Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="Still Water app icon">
+    <h1>Still Water</h1>
+    <p class="tag">Make the ripples meet</p>
+  </header>
+
+  <section>
+    <h2>How to play</h2>
+    <ul>
+      <li><strong>Ice:</strong> tap the water to drop a pebble. One ripple can't break ice, so drop two whose rings cross on it.</li>
+      <li><strong>Lanterns:</strong> they need three crests at once. Drop three pebbles around one, quickly. Its gold dots count the crests.</li>
+      <li><strong>Seed pods:</strong> when a pod's shadow shrinks, tap the shadow. Your pebble lands with it and the dark wave cancels out.</li>
+      <li><strong>Paper boats:</strong> they can't be broken. Push them with ripples into a rock or the bank.</li>
+      <li><strong>Today's Pond:</strong> a new 90-second pond every day, the same for everyone. Your first try counts.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Questions or problems</h2>
+    <p>Please <a id="issues" href="#">open an issue on GitHub</a> and describe what happened, with your iPhone model and iOS version if you can.</p>
+    <p>Common fixes:</p>
+    <ul>
+      <li><strong>No sound:</strong> Still Water follows the ring/silent switch. Turn silent mode off, and check Sound and Music under Settings on the title screen.</li>
+      <li><strong>Lost progress:</strong> scores and progress are kept only on your phone, so deleting the app removes them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>Still Water collects no data. Read the <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+
+  <footer>Still Water for iPhone</footer>
+</main>
+<script>
+  // GitHub Pages lives at <user>.github.io/<repo>/, so the issues page is github.com/<user>/<repo>/issues.
+  (function () {
+    var user = location.hostname.split(".")[0];
+    var repo = location.pathname.split("/").filter(Boolean)[0];
+    if (location.hostname.endsWith("github.io") && repo) {
+      document.getElementById("issues").href = "https://github.com/" + user + "/" + repo + "/issues";
+    }
+  })();
+</script>
+</body>
+</html>
